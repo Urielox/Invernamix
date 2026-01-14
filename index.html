@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invernamix | Frutas y Vegetales Frescos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --verde-profundo: #1b4332;
+            --verde-fresco: #40916c;
+            --blanco: #ffffff;
+            --gris-fondo: #f8f9fa;
+            --texto-oscuro: #2d3436;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--texto-oscuro);
+            background-color: var(--blanco);
+        }
+
+        /* Hero / Inicio */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 { font-size: 4rem; margin-bottom: 0.5rem; letter-spacing: 3px; font-weight: 700; }
+        .hero p { font-size: 1.3rem; max-width: 800px; margin-bottom: 2rem; font-weight: 300; }
+
+        /* Botón de Contacto */
+        .btn-contacto {
+            display: inline-block;
+            background-color: var(--verde-fresco);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn-contacto:hover { background-color: var(--verde-profundo); }
+
+        /* Secciones */
+        .seccion { max-width: 1000px; margin: auto; padding: 5rem 2rem; text-align: center; }
+        .seccion h2 { color: var(--verde-profundo); margin-bottom: 2rem; font-size: 2.2rem; }
+        
+        .mision-texto { font-size: 1.2rem; color: #555; font-style: italic; }
+
+        /* Cuadrícula de características */
+        .grid-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .info-box {
+            background: var(--gris-fondo);
+            padding: 2.5rem;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .info-box:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .info-box h3 { color: var(--verde-fresco); margin-bottom: 1rem; }
+
+        /* Pie de página */
+        footer {
+            background: var(--verde-profundo);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .footer-info p { margin: 10px 0; font-size: 1.1rem; }
+        .socials { margin-top: 20px; }
+        .socials a { color: white; margin: 0 15px; text-decoration: none; opacity: 0.8; }
+        .socials a:hover { opacity: 1; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.8rem; }
+            .hero p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>INVERNAMIX</h1>
+        <p>Distribución de frutas y vegetales frescos en la Riviera Maya</p>
+        <a href="https://wa.me/522222178294" class="btn-contacto">Contactar Ahora</a>
+    </header>
+
+    <section class="seccion">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="grid-info">
+            <div class="info-box">
+                <h3>Frescura Máxima</h3>
+                <p>Seleccionamos cada producto cuidadosamente para asegurar sabor y calidad en su mesa.</p>
+            </div>
+            <div class="info-box">
+                <h3>Servicio Diario</h3>
+                <p>Distribución de lunes a sábado en Cancún, Playa del Carmen y Tulum.</p>
+            </div>
+            <div class="info-box">
+                <h3>Especialistas Horeca</h3>
+                <p>Soluciones eficientes diseñadas para el sector hotelero y gastronómico.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" style="background-color: #fcfcfc;">
+        <h2>Nuestra Misión</h2>
+        <p class="mision-texto">"Formar un eslabón eficiente en la cadena de suministro de nuestros clientes, garantizando siempre productos de la más alta calidad con un servicio confiable."</p>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Llámanos o escribe:</strong> 222 217 8294</p>
+            <p>Atención personalizada e inmediata para negocios y hogares.</p>
+            <div class="socials">
+                <span>Facebook: Invernamix</span> | 
+                <span>Instagram: @invernamix</span>
+            </div>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.6;">&copy; 2024 Invernamix. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
